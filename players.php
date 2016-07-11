@@ -42,7 +42,7 @@ if(isset($_POST['calculate'])){
 					<form method="POST" action="php/get.php" style="position: static;">
 						<p >Player: </p >
 						<select name="Players" method="POST">
-							<option disabled="disabled" selected="selected"><?php echo @$_SESSION['player'] . " (was selected)"; 
+							<option disabled="disabled" selected="selected"><?php echo @$_SESSION['player'] . " (was selected)"?></option>; 
 							<option value="Curry">Stephen Curry</option>
 							<option value="Durant">Kevin Durant</option>
 							<option value="James">Lebron James</option>
