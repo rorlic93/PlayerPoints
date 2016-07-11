@@ -1,9 +1,18 @@
 <?php
 session_start();
 
+if($_POST["Players"] == "Durant"){
 	$url = 'https://ussouthcentral.services.azureml.net/workspaces/2a93444a939245d7baf10b3963496fbe/services/73a1db611eb34aacb0b98d349a4bde60/execute?api-version=2.0&details=true';
 	$api_key = 'o8AN+pNJ0ZZKIi74WxUBE9vZzufBCCl2RHViGhXgzP8hTMagso8+6RumjtF/MJjHfSCPhLHTxl5itDcl/0XFBQ=='; 	
-
+}
+else if($_POST["Players"] == "Curry"){
+	$url = 'https://ussouthcentral.services.azureml.net/workspaces/2a93444a939245d7baf10b3963496fbe/services/0be7524576a34faaa6d3d56467d6b556/execute?api-version=2.0&details=true';
+	$api_key = 'Rj5S49j9Yp+L3h/6bc0wWeatXh+pFlemCE05xnvcG3oso9XL014GqpszaNVvM+8g2wxWYOeQbjqi6m1VHmvoyw=='; 	
+}
+else if($_POST["Players"] == "James"){
+	$url = 'https://ussouthcentral.services.azureml.net/workspaces/2a93444a939245d7baf10b3963496fbe/services/d9605567e9ca43b4b4ac074223a7595d/execute?api-version=2.0&details=true';
+	$api_key = '36ox+238r6C++sUArT+B+24KtQ8rJpCv75ncS8UDt51XLEWPfBQv6kiqQNEGtAdIeCdkrrzw6n5QfHP1O86t0g=='; 
+}
 
 	$opp = $_POST["Opp"];
 	$column1 = $_POST["Column1"];
